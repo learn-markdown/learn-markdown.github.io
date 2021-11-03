@@ -1,0 +1,53 @@
+/* Styles */
+
+body {
+  font-family: 'Fira Sans', sans-serif;
+}
+
+.navbar-brand svg {
+  margin-top: -5px;
+}
+
+.navbar.navbar-dark {
+  background: #383838;
+  background: -moz-linear-gradient(45deg,  #383838 0%, #3b9047 100%);
+  background: -webkit-linear-gradient(45deg,  #383838 0%,#3b9047 100%);
+  background: linear-gradient(45deg,  #383838 0%,#3b9047 100%);
+}
+
+h1 {
+  font-size: 1.25rem;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}
+
+.markdown-body h3 {
+  line-height: 2;
+}
+
+.highlight {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border: 1px solid #e5e5e5;
+  border-radius: 0.25rem;
+  background: #f4f4f4;
+}
+
+pre.highlight {
+  margin-bottom: 0;
+  border: 0;
+}
+
+.highlight pre code,
+code.highlighter-rouge {
+  font-family: 'Fira Code', monospace;
+}
+
+code.highlighter-rouge {
+  padding: 0.125rem 0.25rem;
+  border: 1px solid #e5e5e5;
+  border-radius: 0.125rem;
+  background: #f4f4f4;
+}
