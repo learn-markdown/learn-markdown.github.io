@@ -102,39 +102,36 @@
 			<p>For more information, see “<a href="https://help.github.com/categories/writing-on-github/">Writing on GitHub</a>” in the <em>GitHub Help</em>.</p>
 			<p><a id="examples" title="Examples" class="toc-item"></a></p>
 			<h2>Examples</h2>
-			<ul class="example-nav js-examples-nav">
-				<li><a href="#" class="selected" data-container-id="example-text" data-proofer-ignore="">Text</a></li>
-				<li><a href="#" data-container-id="example-lists" data-proofer-ignore="" class="">Lists</a></li>
-				<li><a href="#" data-container-id="example-images" data-proofer-ignore="" class="">Images</a></li>
-				<li><a href="#" data-container-id="example-headers" data-proofer-ignore="" class="">Headers &amp; Quotes</a></li>
-				<li><a href="#" data-container-id="example-code" data-proofer-ignore="" class="">Code</a></li>
-				<li><a href="#" data-container-id="example-extras" data-proofer-ignore="" class="">Extras</a></li>
+			
+			<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+			  <li class="nav-item" role="presentation">
+				<button class="nav-link active" id="pills-text-tab" data-bs-toggle="pill" data-bs-target="#pills-text" type="button" role="tab" aria-controls="pills-text" aria-selected="true">Text</button>
+			  </li>
+			  <li class="nav-item" role="presentation">
+				<button class="nav-link" id="pills-lists-tab" data-bs-toggle="pill" data-bs-target="#pills-lists" type="button" role="tab" aria-controls="pills-lists" aria-selected="false">Lists</button>
+			  </li>
+			  <li class="nav-item" role="presentation">
+				<button class="nav-link" id="pills-images-tab" data-bs-toggle="pill" data-bs-target="#pills-images" type="button" role="tab" aria-controls="pills-images" aria-selected="false">Images</button>
+			  </li>
+			  <li class="nav-item" role="presentation">
+				<button class="nav-link" id="pills-headers-tab" data-bs-toggle="pill" data-bs-target="#pills-headers" type="button" role="tab" aria-controls="pills-headers" aria-selected="false">Headers & Quotes</button>
+			  </li>
+			  <li class="nav-item" role="presentation">
+				<button class="nav-link" id="pills-code-tab" data-bs-toggle="pill" data-bs-target="#pills-code" type="button" role="tab" aria-controls="pills-code" aria-selected="false">Code</button>
+			  </li>
+			  <li class="nav-item" role="presentation">
+				<button class="nav-link" id="pills-extras-tab" data-bs-toggle="pill" data-bs-target="#pills-extras" type="button" role="tab" aria-controls="pills-extras" aria-selected="false">Extras</button>
+			  </li>
 			</ul>
-			<div class="markdown-example" id="example-text" style="display: block;">
-				<pre class="source">It's very easy to make some words **bold** and other words *italic* with Markdown. You can even <span style="white-space:nowrap">[link to Google!](http://google.com)</span>
-				</pre>
+			<div class="tab-content" id="pills-tabContent">
+			  <div class="tab-pane fade show active" id="pills-text" role="tabpanel" aria-labelledby="pills-text-tab">
+				<pre class="source">It's very easy to make some words **bold** and other words *italic* with Markdown. You can even <span style="white-space:nowrap">[link to Google!](http://google.com)</span></pre>
 				<div class="rendered">
 					It's very easy to make some words <strong>bold</strong> and other words <em>italic</em> with Markdown. You can even <a href="http://google.com">link to Google!</a>
 				</div>
-			</div>
-			<div class="markdown-example" id="example-lists" style="display: none;">
-				<pre class="source">Sometimes you want numbered lists:
-					1. One
-					2. Two
-					3. Three
-
-					Sometimes you want bullet points:
-
-					* Start a line with a star
-					* Profit!
-
-					Alternatively,
-
-					- Dashes work just as well
-					- And if you have sub points, put two spaces before the dash or star:
-					  - Like this
-					  - And this
-				</pre>
+			  </div>
+			  <div class="tab-pane fade" id="pills-lists" role="tabpanel" aria-labelledby="pills-lists-tab">
+				<pre class="source">Sometimes you want numbered lists:<br>1. One<br>2. Two<br>3. Three<br><br>Sometimes you want bullet points:<br>* Start a line with a star<br>* Profit!<br><br>Alternatively,<br><br>- Dashes work just as well<br>- And if you have sub points, put two spaces before the dash or star:<br>- Like this<br>- And this</pre>
 				<div class="rendered">
 					<p>Sometimes you want numbered lists:</p>
 					<ol>
@@ -159,29 +156,16 @@
 						</li>
 					</ul>
 				</div>
-			</div>
-			<div class="markdown-example" id="example-images" style="display: none;">
-				<pre class="source">If you want to embed images, this is how you do it:
-					![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
-				</pre>
+			  </div>
+			  <div class="tab-pane fade" id="pills-images" role="tabpanel" aria-labelledby="pills-images-tab">
+				<pre class="source">If you want to embed images, this is how you do it:<br>![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)</pre>
 				<div class="rendered">
 					<p>If you want to embed images, this is how you do it:</p>
-					<p><img src="https://octodex.github.com/images/yaktocat.png" alt="Image of Yakotocat"></p>
+					<p><img src="https://octodex.github.com/images/yaktocat.png" width="320" alt="Image of Yakotocat"></p>
 				</div>
-			</div>
-			<div class="markdown-example" id="example-headers" style="display: none;">
-				<pre class="source"># Structured documents
-					Sometimes it's useful to have different levels of headings to structure your documents. Start lines with a `#` to create headings. Multiple `##` in a row denote smaller heading sizes.
-
-					### This is a third-tier heading
-
-					You can use one `#` all the way up to `######` six for different heading sizes.
-
-					If you'd like to quote someone, use the &gt; character before the line:
-
-					&gt; Coffee. The finest organic suspension ever devised... I beat the Borg with it.
-					&gt; - Captain Janeway
-				</pre>
+			  </div>
+			  <div class="tab-pane fade" id="pills-headers" role="tabpanel" aria-labelledby="pills-headers-tab">
+				<pre class="source"># Structured documents<br><br>Sometimes it's useful to have different levels of headings to structure your documents. Start lines with a `#` to create headings.<br>Multiple `##` in a row denote smaller heading sizes.<br><br>### This is a third-tier heading<br><br>You can use one `#` all the way up to `######` six for different heading sizes.<br><br>If you'd like to quote someone, use the &gt; character before the line:<br><br>&gt; Coffee. The finest organic suspension ever devised... I beat the Borg with it.<br>&gt; - Captain Janeway</pre>
 				<div class="rendered">
 					<h1>Structured documents</h1>
 					<p>Sometimes it’s useful to have different levels of headings to structure your documents. Start lines with a <code>#</code> to create headings. Multiple <code>##</code> in a row denote smaller heading sizes.</p>
@@ -194,67 +178,22 @@
 						</p>
 					</blockquote>
 				</div>
-			</div>
-			<div class="markdown-example" id="example-code" style="display: none;">
-				<pre class="source">There are many different ways to style code with GitHub's markdown. If you have inline code blocks, wrap them in backticks: `var example = true`.  If you've got a longer block of code, you can indent with four spaces:
-
-					if (isAwesome){
-					  return true
-					}
-
-				GitHub also supports something called code fencing, which allows for multiple lines without indentation:
-
-				```
-				if (isAwesome){
-				  return true
-				}
-				```
-
-				And if you'd like to use syntax highlighting, include the language:
-
-				```javascript
-				if (isAwesome){
-				  return true
-				}
-				```
-				</pre>
+			  </div>
+			  <div class="tab-pane fade" id="pills-code" role="tabpanel" aria-labelledby="pills-code-tab">
+				<pre class="source">There are many different ways to style code with GitHub's markdown. If you have inline code blocks, wrap them in backticks:<br>`var example = true`.  If you've got a longer block of code, you can indent with four spaces:<br><br>  if (isAwesome){<br>    return true<br>  }<br><br>GitHub also supports something called code fencing, which allows for multiple lines without indentation:<br><br>```<br>if (isAwesome){<br>  return true<br>}<br>```<br><br>And if you'd like to use syntax highlighting, include the language:<br><br>```javascript<br>if (isAwesome){<br>  return true<br>}<br>```</pre>
 				<div class="rendered">
 					<p>There are many different ways to style code with GitHub’s markdown. If you have inline code blocks, wrap them in backticks: <code>var example = true</code>.  If you’ve got a longer block of code, you can indent with four spaces:</p>
-					<pre>
-						<code>
-							if (isAwesome){
-							  return true
-							}
-						</code>
-					</pre>
+					<pre><code>if (isAwesome){<br>  return true<br>}</code></pre>
 					<p>GitHub also supports something called code fencing, which allows for multiple lines without indentation:</p>
-					<pre>
-						<code>if (isAwesome){
-							  return true
-							}
-						</code>
-					</pre>
+					<pre><code>if (isAwesome){<br>  return true<br>}</code></pre>
 					<p>And if you’d like to use syntax highlighting, include the language:</p>
 					<div class="highlight highlight-javascript">
-						<pre><span class="k">if</span> <span class="p">(</span><span class="nx">isAwesome</span><span class="p">){</span>
-						  <span class="k">return</span> <span class="kc">true</span>
-						<span class="p">}</span>
-						</pre>
+						<pre><span class="k">if</span> <span class="p">(</span><span class="nx">isAwesome</span><span class="p">){</span><br><span class="k">  return</span> <span class="kc">true</span><br><span class="p">}</span></pre>
 					</div>
 				</div>
-			</div>
-			<div class="markdown-example" id="example-extras" style="display: none;">
-				<pre class="source">GitHub supports many extras in Markdown that help you reference and link to people. If you ever want to direct a comment at someone, you can prefix their name with an @ symbol: Hey @kneath — love your sweater!
-
-				But I have to admit, tasks lists are my favorite:
-
-				- [x] This is a complete item
-				- [ ] This is an incomplete item
-
-				When you include a task list in the first comment of an Issue, you will see a helpful progress bar in your list of issues. It works in Pull Requests, too!
-
-				And, of course emoji!
-				</pre>
+			  </div>
+			  <div class="tab-pane fade" id="pills-extras" role="tabpanel" aria-labelledby="pills-extras-tab">
+				<pre class="source">GitHub supports many extras in Markdown that help you reference and link to people.<br>If you ever want to direct a comment at someone, you can prefix their name with an @ symbol: Hey @kneath — love your sweater!<br><br>But I have to admit, tasks lists are my favorite:<br><br>- [x] This is a complete item<br>- [ ] This is an incomplete item<br><br>When you include a task list in the first comment of an Issue, you will see a helpful progress bar in your list of issues.<br>It works in Pull Requests, too!<br><br>And, of course emoji!</pre>
 				<div class="rendered">
 					<p>GitHub supports many extras in Markdown that help you reference and link to people. If you ever want to direct a comment at someone, you can prefix their name with an @ symbol: Hey <a href="https://github.com/kneath" class="user-mention">@kneath</a> — love your sweater!</p>
 					<p>But I have to admit, tasks lists are my favorite:</p>
@@ -269,6 +208,7 @@
 					<p>When you include a task list in the first comment of an Issue, you will see a helpful progress bar in your list of issues. It works in Pull Requests, too!</p>
 					<p>And, of course emoji! </p>
 				</div>
+			  </div>
 			</div>
 			<p><a id="syntax" title="Basic syntax" class="toc-item"></a></p>
 			<h2>Syntax guide</h2>
@@ -360,7 +300,7 @@
 				</div>
 			</div>
 			<p>Would become:</p>
-			<table class="table border border-secondary">
+			<table class="table border border-secondary w-lg-50">
 				<thead>
 					<tr>
 						<th>First Header</th>
@@ -401,10 +341,11 @@
 			<h3>Emoji</h3>
 			<p>GitHub supports <a href="https://help.github.com/articles/basic-writing-and-formatting-syntax/#using-emoji">emoji</a>!</p>
 			<p>To see a list of every image we support, check out the <a href="https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md">Emoji Cheat Sheet</a>.</p>
+			<p><a href="./assets/markdown-cheatsheet.pdf" class="btn btn-success px-4" target="_blank">Download Markdown Cheatsheet PDF</a></p>
 		</div>
 	</div>
 	<!-- Sponsored -->
-	<div class="container py-5 d-none d-lg-block">
+	<div class="container py-4 d-none d-lg-block">
 		<iframe class="d-block mx-auto" src="https://adhub.one/rand/728x90" width="728" height="90" frameborder="0"></iframe>
 	</div>
 	<div class="container ad-300x250 py-5 d-lg-none">
